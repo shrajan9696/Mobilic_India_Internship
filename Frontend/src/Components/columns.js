@@ -1,0 +1,43 @@
+export const COLUMNS = [
+   {
+    Header:"id",
+    accessor:"id"
+   },
+   {
+    Header:"first name",
+    accessor:"first_name"
+   },
+   {
+    Header:"last_name",
+    accessor:"last_name"
+   },
+   {
+    Header:"email",
+    accessor:"email"
+   },
+   {
+    Header:"gender",
+    accessor:"gender"
+   },
+   {
+    Header:"income",
+    accessor:"income"
+   },
+   {
+    Header:"city",
+    accessor:"city"
+   },
+   {
+    Header:"car",
+    accessor:"car"
+   },
+   {
+    Header:"quote",
+    accessor:"quote"
+   },
+  
+   {
+    Header:"phone_price",
+    accessor:"phone_price"
+   }
+]
