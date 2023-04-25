@@ -7,18 +7,18 @@ import { COLUMNS } from './columns'
 
 import './table.css'
 
- const BasicTable = (props)=> {
+const BasicTable = (props) => {
 
 
-    
-//     
-let columns = props.col;
 
-const data = props.data;
 
- 
-  
-  
+  let columns = props.col;
+
+  const data = props.data;
+
+
+
+
   const {
     getTableProps,
     getTableBodyProps,
@@ -26,15 +26,15 @@ const data = props.data;
     footerGroups,
     rows,
     prepareRow
-  } =  useTable({
-     columns,
-    
+  } = useTable({
+    columns,
+
     data
   })
 
   return (
     <>
-    <h1>{props.header}</h1>
+      <h1>{props.header}</h1>
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map(headerGroup => (

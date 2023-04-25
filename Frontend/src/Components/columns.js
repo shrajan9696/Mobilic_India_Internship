@@ -4,19 +4,19 @@ export const COLUMNS = [
     accessor:"id"
    },
    {
-    Header:"first name",
+    Header:"First_Name",
     accessor:"first_name"
    },
    {
-    Header:"last_name",
+    Header:"Last_Name",
     accessor:"last_name"
    },
    {
-    Header:"email",
+    Header:"Email",
     accessor:"email"
    },
    {
-    Header:"gender",
+    Header:"Gender",
     accessor:"gender"
    },
    {
@@ -24,20 +24,20 @@ export const COLUMNS = [
     accessor:"income"
    },
    {
-    Header:"city",
+    Header:"City",
     accessor:"city"
    },
    {
-    Header:"car",
+    Header:"Car",
     accessor:"car"
    },
    {
-    Header:"quote",
+    Header:"Quote",
     accessor:"quote"
    },
   
    {
-    Header:"phone_price",
+    Header:"Phone_price",
     accessor:"phone_price"
    }
 ]

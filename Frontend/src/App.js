@@ -16,3 +16,4 @@ function App() {
 }
 
 export default App;
+// https://mobilic-data-backend.onrender.com/query1

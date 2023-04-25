@@ -37,7 +37,7 @@ const Home = (props)=>{
          
            try
            {
-              const response = await fetch(`http://localhost:5000/${endPoint}`);
+              const response = await fetch(`https://mobilic-data-backend.onrender.com/${endPoint}`);
               if(!response.ok){
                         throw new Error('Something went wrong!');
                       }
@@ -79,47 +79,49 @@ const Home = (props)=>{
     }
    
    return <>
-   
-    <div class="container">
-  <main class="grid">
+   <div>
+    <h2>Details Generator</h2>
+   </div>
+    <div >
+  <main className="grid">
     <article>
 
-      <div class="text">
+      <div className="text">
         <h3>Query 1</h3>
         <p>Users which have income lower than $5 USD and have a car of brand “BMW” or “Mercedes”.</p>
-        <button onClick={details1handler} value="1">Fetch</button>
+        <button onClick={details1handler} value="1" className="button" >Fetch</button>
       </div>
     </article>
     <article>
 
-      <div class="text">
+      <div className="text">
         <h3>Query 2</h3>
         <p>Male Users which have phone price greater than 10,000.</p>
-        <button onClick={details1handler} value="2">Fetch</button>
+        <button onClick={details1handler} value="2" className="button">Fetch</button>
       </div>
     </article>
     <article>
 
-      <div class="text">
+      <div className="text">
         <h3>Query 3</h3>
         <p>Users whose last name starts with “M” and has a quote character length greater than 15 and email includes his/her last name.</p>
-        <button onClick={details1handler} value="3">Fetch</button>
+        <button onClick={details1handler} value="3" className="button">Fetch</button>
       </div>
     </article>
     <article>
 
-      <div class="text">
+      <div className="text">
         <h3>Query 4</h3>
         <p>Users which have a car of brand “BMW”, “Mercedes” or “Audi” and whose email does not include any digit.</p>
-       <button onClick={details1handler} value="4">Fetch</button>
+       <button onClick={details1handler} value="4" className="button">Fetch</button>
       </div>
     </article>
     <article>
 
-      <div class="text">
+      <div className="text">
         <h3>Query 5</h3>
         <p>Show the data of top 10 cities which have the highest number of users and their average income.</p>
-        <button onClick={details1handler} value="5">Fetch</button>
+        <button onClick={details1handler} value="5" className="button">Fetch</button>
       </div>
     </article>
    
